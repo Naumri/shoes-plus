@@ -1,0 +1,10 @@
+.promotion {
+    width: 100%;
+    padding: 8px 0;
+    background-color: var(--gray-extra-light);
+    text-align: center;
+}
+
+.promotion span {
+    font-size: 14px;
+}

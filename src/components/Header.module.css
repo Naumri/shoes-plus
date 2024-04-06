@@ -26,7 +26,11 @@
 .navbar a {
     color: var(--black);
     text-decoration: none;
-    padding: 0 32px;
+    padding: 0 32px 4px 32px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #000;
 }
 
 .navbar a.emphasis {
@@ -56,6 +60,7 @@
 .search_wrapper img {
     width: 44px;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 .navbar_user {
