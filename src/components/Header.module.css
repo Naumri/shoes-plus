@@ -11,6 +11,7 @@
     font-weight: 900;
     font-style: italic;
     font-size: 48px;
+    user-select: none;
 }
 
 .header {
