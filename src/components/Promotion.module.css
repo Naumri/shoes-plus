@@ -7,4 +7,9 @@
 
 .promotion span {
     font-size: 14px;
+    transition: .2s;
+}
+
+.hide {
+    opacity: 0;
 }

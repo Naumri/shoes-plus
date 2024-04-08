@@ -4,6 +4,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 0 32px;
 }
 
 .logo {
@@ -12,6 +13,7 @@
     font-style: italic;
     font-size: 48px;
     user-select: none;
+    margin-right: 32px;
 }
 
 .header {
@@ -21,7 +23,6 @@
 .navbar {
     display: flex;
     list-style-type: none;
-    margin-left: 64px;
 }
 
 .navbar a {
@@ -38,8 +39,14 @@
     font-weight: 700;
 }
 
-.navbar_user img {
+.navbar_user a > img,
+.menu {
     width: 36px;
+}
+
+.menu > img, 
+.search_mobile > img {
+    width: 100%;
 }
 
 .search_wrapper {
@@ -58,10 +65,19 @@
     outline: 0;
 }
 
-.search_wrapper img {
-    width: 44px;
-    padding-right: 5px;
+.search_wrapper .searchImg {
+    margin-right: 5px;
+}
+
+.search_mobile,
+.menu {
+    display: none;
+}
+
+.searchImg {
+    width: 40px;
     cursor: pointer;
+    filter: brightness(0);
 }
 
 .navbar_user {
@@ -71,6 +87,40 @@
     align-items: center;
 }
 
-.navbar_user a {
+.navbar_user a,
+.menu {
     margin-left: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+    .menu,
+    .search_mobile {
+        display: block;
+    }   
+    .navbar,
+    .search_wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .navbar_user a img,
+    .navbar_user div {
+        width: 5vw;
+        min-width: 15px;
+    }
+
+    .navbar_user .search_mobile {
+        width: 5.5vw;
+    }
+
+    .logo {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+   .container {
+    padding: 0 16px;
+   }
 }
